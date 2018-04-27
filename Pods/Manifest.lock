@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.7.2)
+  - ESTabBarController-swift (2.6.2)
+  - MJRefresh (3.1.15.3)
+  - NVActivityIndicatorView (4.2.0):
+    - NVActivityIndicatorView/Presenter (= 4.2.0)
+  - NVActivityIndicatorView/Presenter (4.2.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESTabBarController-swift
+  - MJRefresh
+  - NVActivityIndicatorView
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - ESTabBarController-swift
+    - MJRefresh
+    - NVActivityIndicatorView
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ESTabBarController-swift: f0a8679e43df1e60b7b36bbcaf1dc98ba6273c7d
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: fdc1b7de191c8f6b52f1c426c622b5f09963dbfa
+
+COCOAPODS: 1.5.0
