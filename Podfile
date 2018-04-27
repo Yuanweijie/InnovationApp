@@ -6,7 +6,7 @@ target ‘InnovationApp’ do
 
 pod 'Alamofire'
 
- pod 'SwiftyJSON'
+pod 'SwiftyJSON'
 
 pod 'SnapKit'
 

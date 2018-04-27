@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeNavView: UIView {
-
+    
     lazy var titleLab: UILabel = {
         var titleLab : UILabel = UILabel()
         titleLab.text = "首页"
@@ -45,8 +45,7 @@ class HomeNavView: UIView {
         searchBtn.snp.makeConstraints { (maker) in
             maker.right.equalTo(-15)
             maker.bottom.equalToSuperview()
-            maker.height.equalTo(35)
-            maker.width.equalTo(35)
+            maker.width.height.equalTo(40)
         }
         addBtn.snp.makeConstraints { (maker) in
             maker.right.equalTo(searchBtn.snp.left)
@@ -58,5 +57,5 @@ class HomeNavView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
