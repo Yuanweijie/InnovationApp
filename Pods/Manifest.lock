@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
   - ESTabBarController-swift (2.6.2)
+  - IQKeyboardManagerSwift (6.0.2)
   - MJRefresh (3.1.15.3)
   - NVActivityIndicatorView (4.2.0):
     - NVActivityIndicatorView/Presenter (= 4.2.0)
@@ -14,6 +15,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - ESTabBarController-swift
+  - IQKeyboardManagerSwift
   - MJRefresh
   - NVActivityIndicatorView
   - RxCocoa
@@ -25,6 +27,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - ESTabBarController-swift
+    - IQKeyboardManagerSwift
     - MJRefresh
     - NVActivityIndicatorView
     - RxCocoa
@@ -35,6 +38,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   ESTabBarController-swift: f0a8679e43df1e60b7b36bbcaf1dc98ba6273c7d
+  IQKeyboardManagerSwift: 59d4b0e140bc546c3c76ae5bb35b3dafd10b8172
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
@@ -42,6 +46,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: fdc1b7de191c8f6b52f1c426c622b5f09963dbfa
+PODFILE CHECKSUM: 3f0d433e72e8af53ae58879cb1f8401bd7a83617
 
 COCOAPODS: 1.5.0

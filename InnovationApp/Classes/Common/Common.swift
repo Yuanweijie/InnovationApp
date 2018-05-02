@@ -9,9 +9,9 @@
 import UIKit
 
 // 屏幕宽度
-let kScreenH = UIScreen.main.bounds.height
+let kScreenH = UIScreen.main.bounds.size.height
 // 屏幕高度
-let kScreenW = UIScreen.main.bounds.width
+let kScreenW = UIScreen.main.bounds.size.width
 //状态栏高度
 let kStatusBarHeight : NSInteger = NSInteger(UIApplication.shared.statusBarFrame.size.height)
 let kTopBarHeight = 44
@@ -29,6 +29,9 @@ let kThemeWhiteColor = UIColor.hexColor(0xFFFFFF)
 let kThemeBlackColor = UIColor.hexColor(0x000000)
 let kThemeBgColor = UIColor.hexColor(0xF1F2F8)
 
+func GetImage(name: String) -> UIImage {
+    return UIImage.init(named: name)!
+}
 
 func Font(size : CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: size)

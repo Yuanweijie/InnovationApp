@@ -19,12 +19,12 @@ class HomeNavView: UIView {
     }()
     lazy var addBtn: UIButton = {
         var addBtn : UIButton = UIButton(type: .custom)
-        addBtn.setImage(UIImage(named: "home_add"), for: .normal)
+        addBtn.setImage(GetImage(name: "home_add"), for: .normal)
         return addBtn
     }()
     lazy var searchBtn: UIButton = {
         var searchBtn : UIButton = UIButton(type: .custom)
-        searchBtn.setImage(UIImage(named: "home_search"), for: .normal)
+        searchBtn.setImage(GetImage(name: "home_search"), for: .normal)
         return searchBtn
     }()
     

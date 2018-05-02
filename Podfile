@@ -20,4 +20,6 @@ pod 'RxSwift'
 
 pod 'RxCocoa'
 
+pod 'IQKeyboardManagerSwift'
+
 end

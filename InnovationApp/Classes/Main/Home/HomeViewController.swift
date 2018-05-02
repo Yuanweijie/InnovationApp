@@ -13,7 +13,17 @@ import RxCocoa
 class HomeViewController: INBaseViewController {
     
     private lazy var disposeBag = DisposeBag()
-
+    
+    //歌曲列表数据源
+    let musicListViewModel = MusicListViewModel()
+    
+    lazy var tableView: UITableView = {
+        var tableView = UITableView(frame: CGRect.zero, style: .grouped)
+        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "HomeTableViewCell")
+        return tableView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNav()
@@ -23,6 +33,11 @@ class HomeViewController: INBaseViewController {
         }) { (error) in
             
         }
+        
+        let observable = Observable.of("A", "B", "C")
+        observable.subscribe(onNext: { element in
+            print(element)
+        })
         
     }
     
@@ -51,7 +66,7 @@ class HomeViewController: INBaseViewController {
             .disposed(by: disposeBag)
         homeNav.searchBtn.rx.controlEvent(.touchUpInside)
             .subscribe(onNext: { [weak self] in
-                self?.navigationController?.pushViewController(HomeDetailViewController(), animated: true)
+                self?.navigationController?.pushViewController(InputViewController(), animated: true)
             })
             .disposed(by: disposeBag)
         view.addSubview(homeNav)
@@ -59,7 +74,26 @@ class HomeViewController: INBaseViewController {
             maker.top.left.right.equalToSuperview()
             maker.height.equalTo(kTopBarHeight + kStatusBarHeight)
         }
+        
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { (maker) in
+            maker.left.right.bottom.equalToSuperview()
+            maker.top.equalTo(homeNav.snp.bottom)
+        }
+        
+        musicListViewModel.data
+            .bind(to: tableView.rx.items(cellIdentifier: "HomeTableViewCell", cellType: HomeTableViewCell.self)) {_, music, cell in
+                cell.titleLab.text = music.name + music.singer
+        }.disposed(by: disposeBag)
+        
+        
+        tableView.rx.modelSelected(Music.self).subscribe(onNext: { music in
+            print("你选中的歌曲信息【\(music)】")
+        }).disposed(by: disposeBag)
+        
     }
+    
+    
     
     
 }
