@@ -13,8 +13,6 @@ class HomeDetailViewController: RefreshViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "详情"
-        showRefreshHeader = true
-        showRefreshFooter = true
         tableView.mj_header.beginRefreshing()
     }
     

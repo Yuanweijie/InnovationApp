@@ -32,6 +32,9 @@
 		B4A4A0092090305C003EF9DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4A0082090305C003EF9DD /* HomeViewController.swift */; };
 		B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4A00A2090306C003EF9DD /* MineViewController.swift */; };
 		B4A4A01220903AF9003EF9DD /* INBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4A01120903AF9003EF9DD /* INBaseViewController.swift */; };
+		B4C1008220A2E16600BB729F /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008120A2E16600BB729F /* InputTextView.swift */; };
+		B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008420A2F64F00BB729F /* MBProgressTool.swift */; };
+		B4C1009020A317E200BB729F /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008E20A317E200BB729F /* AppUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,10 @@
 		B4A4A0082090305C003EF9DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B4A4A00A2090306C003EF9DD /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		B4A4A01120903AF9003EF9DD /* INBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseViewController.swift; sourceTree = "<group>"; };
+		B4C1008120A2E16600BB729F /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		B4C1008420A2F64F00BB729F /* MBProgressTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressTool.swift; sourceTree = "<group>"; };
+		B4C1008E20A317E200BB729F /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		B4C1008F20A317E200BB729F /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
 		B4D34C2E2091E88B001173D3 /* InnovationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InnovationApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +115,9 @@
 		B414B6F42092D8DA00D433DF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B4C1008D20A317E200BB729F /* APPUtils */,
 				B414B6F52092D91400D433DF /* NetworkTool.swift */,
+				B4C1008420A2F64F00BB729F /* MBProgressTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 		B4A482442099BF4E007A33DB /* Input */ = {
 			isa = PBXGroup;
 			children = (
+				B4C1008020A2E14F00BB729F /* View */,
 				B4A482452099BF64007A33DB /* InputViewController.swift */,
 			);
 			path = Input;
@@ -291,6 +301,23 @@
 			path = INBaseView;
 			sourceTree = "<group>";
 		};
+		B4C1008020A2E14F00BB729F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4C1008120A2E16600BB729F /* InputTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4C1008D20A317E200BB729F /* APPUtils */ = {
+			isa = PBXGroup;
+			children = (
+				B4C1008E20A317E200BB729F /* AppUtils.m */,
+				B4C1008F20A317E200BB729F /* AppUtils.h */,
+			);
+			path = APPUtils;
+			sourceTree = "<group>";
+		};
 		B4D34C2D2091E86C001173D3 /* BridgeHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +424,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -409,6 +437,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -435,6 +464,7 @@
 				B430807120906C18000F3DC0 /* INTabBarBasicContentView.swift in Sources */,
 				B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */,
 				B430807620907775000F3DC0 /* RefreshViewController.swift in Sources */,
+				B4C1009020A317E200BB729F /* AppUtils.m in Sources */,
 				B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */,
 				B414B6F92093129D00D433DF /* Music.swift in Sources */,
 				B414B6EC2092B35B00D433DF /* HomeNavView.swift in Sources */,
@@ -442,8 +472,10 @@
 				B4A4A0092090305C003EF9DD /* HomeViewController.swift in Sources */,
 				B430807320906C18000F3DC0 /* INTabBarViewController.swift in Sources */,
 				B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */,
+				B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */,
 				B430807220906C18000F3DC0 /* INTabbarBouncesContentView.swift in Sources */,
 				B4A49FF4209025A9003EF9DD /* AppDelegate.swift in Sources */,
+				B4C1008220A2E16600BB729F /* InputTextView.swift in Sources */,
 				B4A49FFD20902CE3003EF9DD /* Common.swift in Sources */,
 				B4A4A00520902F6F003EF9DD /* UIImage+Color.swift in Sources */,
 				B430808B2090AD86000F3DC0 /* INBaseLoadingView.swift in Sources */,

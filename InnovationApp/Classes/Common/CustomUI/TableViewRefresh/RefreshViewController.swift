@@ -84,11 +84,9 @@ class RefreshViewController: INBaseViewController {
         var tableView = UITableView(frame: CGRect.zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
-//        if #available(iOS 11.0, *) {
-//            tableView.contentInsetAdjustmentBehavior = .automatic;
-//        } else {
-//            self.automaticallyAdjustsScrollViewInsets = false
-//        }
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .automatic;
+        } 
         return tableView
     }()
     
@@ -100,7 +98,8 @@ class RefreshViewController: INBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubViews()
-        
+        showRefreshHeader = true
+        showRefreshFooter = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -129,6 +128,11 @@ extension RefreshViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

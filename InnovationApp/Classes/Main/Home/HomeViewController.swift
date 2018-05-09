@@ -23,7 +23,6 @@ class HomeViewController: INBaseViewController {
         return tableView
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNav()
@@ -33,11 +32,9 @@ class HomeViewController: INBaseViewController {
         }) { (error) in
             
         }
+       
         
-        let observable = Observable.of("A", "B", "C")
-        observable.subscribe(onNext: { element in
-            print(element)
-        })
+        
         
     }
     

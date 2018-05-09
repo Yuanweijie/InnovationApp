@@ -10,17 +10,12 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    lazy var chooseImg: UIImageView = {
-        let chooseImg = UIImageView()
-        chooseImg.image = UIImage(named: "weixuan")
-        return chooseImg
-    }()
-    
     lazy var titleLab: UILabel = {
         let titleLab = UILabel()
         titleLab.text = "女装"
+        titleLab.numberOfLines = 0
         titleLab.textColor = UIColor.hexColor(0x333333)
-        titleLab.font = UIFont.systemFont(ofSize: 17.0)
+        titleLab.font = Font(size: 17)
         return titleLab
     }()
     
@@ -28,15 +23,10 @@ class HomeTableViewCell: UITableViewCell {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubview(chooseImg)
         contentView.addSubview(titleLab)
-        chooseImg.snp.makeConstraints { (make) in
-            make.left.equalTo(15)
-            make.centerY.equalTo(self)
-        }
         titleLab.snp.makeConstraints { (make) in
-            make.left.equalTo(chooseImg.snp.right).offset(16)
-            make.centerY.equalTo(contentView)
+            make.top.left.equalTo(10)
+            make.right.equalTo(-10)
         }
         
     }

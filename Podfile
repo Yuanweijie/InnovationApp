@@ -22,4 +22,6 @@ pod 'RxCocoa'
 
 pod 'IQKeyboardManagerSwift'
 
+pod 'MBProgressHUD'
+
 end

@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "完成"
+        IQKeyboardManager.shared.toolbarBarTintColor = kThemeBgColor
 //        IQKeyboardManager.shared.keyboardDistanceFromTextField = 0
         
         return true

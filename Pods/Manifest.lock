@@ -2,10 +2,11 @@ PODS:
   - Alamofire (4.7.2)
   - ESTabBarController-swift (2.6.2)
   - IQKeyboardManagerSwift (6.0.2)
+  - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.3)
-  - NVActivityIndicatorView (4.2.0):
-    - NVActivityIndicatorView/Presenter (= 4.2.0)
-  - NVActivityIndicatorView/Presenter (4.2.0)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - Alamofire
   - ESTabBarController-swift
   - IQKeyboardManagerSwift
+  - MBProgressHUD
   - MJRefresh
   - NVActivityIndicatorView
   - RxCocoa
@@ -28,6 +30,7 @@ SPEC REPOS:
     - Alamofire
     - ESTabBarController-swift
     - IQKeyboardManagerSwift
+    - MBProgressHUD
     - MJRefresh
     - NVActivityIndicatorView
     - RxCocoa
@@ -39,13 +42,14 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   ESTabBarController-swift: f0a8679e43df1e60b7b36bbcaf1dc98ba6273c7d
   IQKeyboardManagerSwift: 59d4b0e140bc546c3c76ae5bb35b3dafd10b8172
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  NVActivityIndicatorView: 75c9634073e03b31d7e2748cd2417feab1206195
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 3f0d433e72e8af53ae58879cb1f8401bd7a83617
+PODFILE CHECKSUM: 0fda12f672cb463835aa3f759c12718bc211fc08
 
 COCOAPODS: 1.5.0
