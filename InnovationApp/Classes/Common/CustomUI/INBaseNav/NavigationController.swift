@@ -30,7 +30,7 @@ class NavigationController: UINavigationController {
             NSAttributedStringKey.foregroundColor : kThemeBlackColor,
             NSAttributedStringKey.font : boldFont(size: 18)]
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : Font(size: 15)], for: .normal)
-        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-10, -1), for: .default)
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-8, -1), for: .default)
         // 设置导航栏样式
         navigationBar.shadowImage = UIImage()
         navigationBar.backIndicatorImage = UIImage(named: "nav_return")

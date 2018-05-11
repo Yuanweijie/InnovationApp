@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Kingfisher
 
 class HomeViewController: INBaseViewController {
     
@@ -33,6 +34,11 @@ class HomeViewController: INBaseViewController {
             
         }
        
+        
+//        let image: UIImageView = UIImageView(frame: CGRect(x: 50, y: 100, width: 100, height: 100))
+//        image.kf.setImage(with: URL(string: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525943087307&di=2568349d26d6b884a28bdc5e51bcfc53&imgtype=0&src=http%3A%2F%2Fimg10.cache.hxsd.com%2Fgame%2F2015%2F11%2F10%2F691428_1447126393_22.jpg"))
+//        view.addSubview(image)
+        
         
         
         

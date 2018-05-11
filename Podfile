@@ -24,4 +24,6 @@ pod 'IQKeyboardManagerSwift'
 
 pod 'MBProgressHUD'
 
+pod 'Kingfisher'
+
 end
