@@ -7,13 +7,9 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import Kingfisher
 
 class HomeViewController: INBaseViewController {
-    
-    private lazy var disposeBag = DisposeBag()
     
     //歌曲列表数据源
     let musicListViewModel = MusicListViewModel()

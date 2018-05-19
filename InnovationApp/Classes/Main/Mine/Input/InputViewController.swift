@@ -43,9 +43,22 @@ class InputViewController: RefreshViewController {
         searchTF.returnKeyType = .search
         searchTF.placeholder = "搜索话术"
         searchTF.frame = CGRect(x: 25, y: 0, width: kScreenW-180, height: 40)
+        searchTF.addTarget(self, action: #selector(changeTetx), for: .editingChanged)
         return searchTF
     }()
     
+    @objc func changeTetx() {
+        let selectedRange = self.searchTF.markedTextRange
+        if selectedRange == nil || (selectedRange?.isEmpty)! {
+            if let text: String = self.searchTF.text {
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.6, execute: {
+                    print(text)
+                    self.tableView.mj_header.beginRefreshing()
+                })
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = searchView
@@ -114,9 +127,13 @@ class InputViewController: RefreshViewController {
 
 extension InputViewController: UITextFieldDelegate {
     
+   
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        tableView.mj_header.beginRefreshing()
+        
+//        textField.resignFirstResponder()
+//        tableView.mj_header.beginRefreshing()
         return true
     }
     

@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6B3DD5F8590373C542968997 /* Pods_InnovationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C8872796EBED549BE9BD3 /* Pods_InnovationApp.framework */; };
+		B4114FE020B001B90043B45F /* GoodsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114FDF20B001B90043B45F /* GoodsListTableViewCell.swift */; };
+		B4114FE220B002020043B45F /* GoodsListViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114FE120B002020043B45F /* GoodsListViewCellConfig.swift */; };
+		B4114FE420B00D2D0043B45F /* UIBarButtonItem+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114FE320B00D2D0043B45F /* UIBarButtonItem+Touch.swift */; };
 		B414B6EC2092B35B00D433DF /* HomeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6EB2092B35B00D433DF /* HomeNavView.swift */; };
 		B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6F52092D91400D433DF /* NetworkTool.swift */; };
 		B414B6F92093129D00D433DF /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6F82093129D00D433DF /* Music.swift */; };
 		B414B6FB2093133000D433DF /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6FA2093133000D433DF /* MusicListViewModel.swift */; };
 		B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6FC209316B800D433DF /* HomeTableViewCell.swift */; };
+		B418F15220AE6E0C00CB1053 /* MyEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15120AE6E0C00CB1053 /* MyEditViewController.swift */; };
+		B418F15820AE6E9E00CB1053 /* ConfigsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15720AE6E9E00CB1053 /* ConfigsTableViewController.swift */; };
+		B418F15A20AE6EE600CB1053 /* TableViewConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15920AE6EE600CB1053 /* TableViewConfigs.swift */; };
+		B418F15C20AE707400CB1053 /* TableViewSectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15B20AE707400CB1053 /* TableViewSectionConfig.swift */; };
+		B418F15E20AE708A00CB1053 /* TableViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15D20AE708A00CB1053 /* TableViewCellConfig.swift */; };
+		B418F16020AE74AF00CB1053 /* ConfigTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15F20AE74AF00CB1053 /* ConfigTableViewCell.swift */; };
 		B430806C20906220000F3DC0 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430806B20906220000F3DC0 /* HomeDetailViewController.swift */; };
 		B430807120906C18000F3DC0 /* INTabBarBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430806E20906C18000F3DC0 /* INTabBarBasicContentView.swift */; };
 		B430807220906C18000F3DC0 /* INTabbarBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430806F20906C18000F3DC0 /* INTabbarBouncesContentView.swift */; };
@@ -41,11 +50,20 @@
 		798EF56ECFDC11D7E7FFEF9E /* Pods-InnovationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InnovationApp/Pods-InnovationApp.release.xcconfig"; sourceTree = "<group>"; };
 		8E0C8872796EBED549BE9BD3 /* Pods_InnovationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InnovationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EA2426D77C9C9EA40BA940 /* Pods-InnovationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InnovationApp/Pods-InnovationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B4114FDF20B001B90043B45F /* GoodsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListTableViewCell.swift; sourceTree = "<group>"; };
+		B4114FE120B002020043B45F /* GoodsListViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListViewCellConfig.swift; sourceTree = "<group>"; };
+		B4114FE320B00D2D0043B45F /* UIBarButtonItem+Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Touch.swift"; sourceTree = "<group>"; };
 		B414B6EB2092B35B00D433DF /* HomeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavView.swift; sourceTree = "<group>"; };
 		B414B6F52092D91400D433DF /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		B414B6F82093129D00D433DF /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		B414B6FA2093133000D433DF /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
 		B414B6FC209316B800D433DF /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B418F15120AE6E0C00CB1053 /* MyEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEditViewController.swift; sourceTree = "<group>"; };
+		B418F15720AE6E9E00CB1053 /* ConfigsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigsTableViewController.swift; sourceTree = "<group>"; };
+		B418F15920AE6EE600CB1053 /* TableViewConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConfigs.swift; sourceTree = "<group>"; };
+		B418F15B20AE707400CB1053 /* TableViewSectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionConfig.swift; sourceTree = "<group>"; };
+		B418F15D20AE708A00CB1053 /* TableViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellConfig.swift; sourceTree = "<group>"; };
+		B418F15F20AE74AF00CB1053 /* ConfigTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewCell.swift; sourceTree = "<group>"; };
 		B430806B20906220000F3DC0 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 		B430806E20906C18000F3DC0 /* INTabBarBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INTabBarBasicContentView.swift; sourceTree = "<group>"; };
 		B430806F20906C18000F3DC0 /* INTabbarBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INTabbarBouncesContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +145,52 @@
 			children = (
 				B414B6F82093129D00D433DF /* Music.swift */,
 				B414B6FA2093133000D433DF /* MusicListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B418F15020AE6DF400CB1053 /* MyEdit */ = {
+			isa = PBXGroup;
+			children = (
+				B418F15120AE6E0C00CB1053 /* MyEditViewController.swift */,
+			);
+			path = MyEdit;
+			sourceTree = "<group>";
+		};
+		B418F15320AE6E3000CB1053 /* TableViewConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B418F15420AE6E4C00CB1053 /* Control */,
+				B418F15620AE6E4C00CB1053 /* Model */,
+				B418F15520AE6E4C00CB1053 /* View */,
+			);
+			path = TableViewConfig;
+			sourceTree = "<group>";
+		};
+		B418F15420AE6E4C00CB1053 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B418F15720AE6E9E00CB1053 /* ConfigsTableViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B418F15520AE6E4C00CB1053 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B418F15F20AE74AF00CB1053 /* ConfigTableViewCell.swift */,
+				B4114FDF20B001B90043B45F /* GoodsListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B418F15620AE6E4C00CB1053 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B418F15920AE6EE600CB1053 /* TableViewConfigs.swift */,
+				B418F15B20AE707400CB1053 /* TableViewSectionConfig.swift */,
+				B418F15D20AE708A00CB1053 /* TableViewCellConfig.swift */,
+				B4114FE120B002020043B45F /* GoodsListViewCellConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +311,7 @@
 		B4A49FF820902BAA003EF9DD /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				B418F15320AE6E3000CB1053 /* TableViewConfig */,
 				B430807420907746000F3DC0 /* TableViewRefresh */,
 				B430806D20906C18000F3DC0 /* TabbarControl */,
 				B4A4A01020903AEB003EF9DD /* INBaseView */,
@@ -268,6 +333,7 @@
 			children = (
 				B4A4A00220902F0E003EF9DD /* UIColor+HexColor.swift */,
 				B4A4A00420902F6F003EF9DD /* UIImage+Color.swift */,
+				B4114FE320B00D2D0043B45F /* UIBarButtonItem+Touch.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -286,6 +352,7 @@
 		B4A4A0072090301D003EF9DD /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				B418F15020AE6DF400CB1053 /* MyEdit */,
 				B4A482442099BF4E007A33DB /* Input */,
 				B4A4A00A2090306C003EF9DD /* MineViewController.swift */,
 			);
@@ -460,19 +527,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				B414B6FB2093133000D433DF /* MusicListViewModel.swift in Sources */,
+				B4114FE420B00D2D0043B45F /* UIBarButtonItem+Touch.swift in Sources */,
 				B4A4A00320902F0E003EF9DD /* UIColor+HexColor.swift in Sources */,
 				B4A4A01220903AF9003EF9DD /* INBaseViewController.swift in Sources */,
 				B4A482462099BF64007A33DB /* InputViewController.swift in Sources */,
+				B418F15220AE6E0C00CB1053 /* MyEditViewController.swift in Sources */,
 				B430807120906C18000F3DC0 /* INTabBarBasicContentView.swift in Sources */,
 				B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */,
 				B430807620907775000F3DC0 /* RefreshViewController.swift in Sources */,
 				B4C1009020A317E200BB729F /* AppUtils.m in Sources */,
+				B418F16020AE74AF00CB1053 /* ConfigTableViewCell.swift in Sources */,
+				B4114FE220B002020043B45F /* GoodsListViewCellConfig.swift in Sources */,
 				B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */,
 				B414B6F92093129D00D433DF /* Music.swift in Sources */,
 				B414B6EC2092B35B00D433DF /* HomeNavView.swift in Sources */,
+				B418F15A20AE6EE600CB1053 /* TableViewConfigs.swift in Sources */,
+				B418F15C20AE707400CB1053 /* TableViewSectionConfig.swift in Sources */,
+				B418F15E20AE708A00CB1053 /* TableViewCellConfig.swift in Sources */,
+				B418F15820AE6E9E00CB1053 /* ConfigsTableViewController.swift in Sources */,
 				B4A49FFB20902C26003EF9DD /* NavigationController.swift in Sources */,
 				B4A4A0092090305C003EF9DD /* HomeViewController.swift in Sources */,
 				B430807320906C18000F3DC0 /* INTabBarViewController.swift in Sources */,
+				B4114FE020B001B90043B45F /* GoodsListTableViewCell.swift in Sources */,
 				B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */,
 				B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */,
 				B430807220906C18000F3DC0 /* INTabbarBouncesContentView.swift in Sources */,
@@ -634,7 +710,10 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = InnovationApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mc.InnovationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "InnovationApp/Classes/Common/BridgeHeader/InnovationApp-Bridging-Header.h";
@@ -657,7 +736,10 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = InnovationApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mc.InnovationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "InnovationApp/Classes/Common/BridgeHeader/InnovationApp-Bridging-Header.h";
