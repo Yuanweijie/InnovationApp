@@ -28,6 +28,8 @@
 		B430807320906C18000F3DC0 /* INTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430807020906C18000F3DC0 /* INTabBarViewController.swift */; };
 		B430807620907775000F3DC0 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430807520907775000F3DC0 /* RefreshViewController.swift */; };
 		B430808B2090AD86000F3DC0 /* INBaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B430808A2090AD86000F3DC0 /* INBaseLoadingView.swift */; };
+		B45F7D1620EC66BF00BEB471 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1520EC66BF00BEB471 /* FindViewController.swift */; };
+		B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */; };
 		B4A482462099BF64007A33DB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A482452099BF64007A33DB /* InputViewController.swift */; };
 		B4A49FE0209021A9003EF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A49FDE209021A9003EF9DD /* Main.storyboard */; };
 		B4A49FE2209021AB003EF9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A49FE1209021AB003EF9DD /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		B430807020906C18000F3DC0 /* INTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INTabBarViewController.swift; sourceTree = "<group>"; };
 		B430807520907775000F3DC0 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		B430808A2090AD86000F3DC0 /* INBaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseLoadingView.swift; sourceTree = "<group>"; };
+		B45F7D1520EC66BF00BEB471 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraViewController.swift; sourceTree = "<group>"; };
 		B4A482452099BF64007A33DB /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		B4A49FD7209021A9003EF9DD /* InnovationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnovationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A49FDF209021A9003EF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -195,12 +199,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B430806A209061FB000F3DC0 /* 详情 */ = {
+		B430806A209061FB000F3DC0 /* HDetail */ = {
 			isa = PBXGroup;
 			children = (
 				B430806B20906220000F3DC0 /* HomeDetailViewController.swift */,
 			);
-			path = "详情";
+			path = HDetail;
 			sourceTree = "<group>";
 		};
 		B430806D20906C18000F3DC0 /* TabbarControl */ = {
@@ -219,6 +223,23 @@
 				B430807520907775000F3DC0 /* RefreshViewController.swift */,
 			);
 			path = TableViewRefresh;
+			sourceTree = "<group>";
+		};
+		B45F7D1420EC65BB00BEB471 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				B45F7D1720EC688500BEB471 /* FCamera */,
+				B45F7D1520EC66BF00BEB471 /* FindViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		B45F7D1720EC688500BEB471 /* FCamera */ = {
+			isa = PBXGroup;
+			children = (
+				B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */,
+			);
+			path = FCamera;
 			sourceTree = "<group>";
 		};
 		B4A482442099BF4E007A33DB /* Input */ = {
@@ -295,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A4A0062090301D003EF9DD /* Home */,
+				B45F7D1420EC65BB00BEB471 /* Find */,
 				B4A4A0072090301D003EF9DD /* Mine */,
 			);
 			path = Main;
@@ -344,7 +366,7 @@
 				B4A4A0082090305C003EF9DD /* HomeViewController.swift */,
 				B414B6F72093128B00D433DF /* Model */,
 				B414B6EA2092B33E00D433DF /* View */,
-				B430806A209061FB000F3DC0 /* 详情 */,
+				B430806A209061FB000F3DC0 /* HDetail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -379,8 +401,8 @@
 		B4C1008D20A317E200BB729F /* APPUtils */ = {
 			isa = PBXGroup;
 			children = (
-				B4C1008E20A317E200BB729F /* AppUtils.m */,
 				B4C1008F20A317E200BB729F /* AppUtils.h */,
+				B4C1008E20A317E200BB729F /* AppUtils.m */,
 			);
 			path = APPUtils;
 			sourceTree = "<group>";
@@ -538,6 +560,7 @@
 				B4C1009020A317E200BB729F /* AppUtils.m in Sources */,
 				B418F16020AE74AF00CB1053 /* ConfigTableViewCell.swift in Sources */,
 				B4114FE220B002020043B45F /* GoodsListViewCellConfig.swift in Sources */,
+				B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */,
 				B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */,
 				B414B6F92093129D00D433DF /* Music.swift in Sources */,
 				B414B6EC2092B35B00D433DF /* HomeNavView.swift in Sources */,
@@ -547,6 +570,7 @@
 				B418F15820AE6E9E00CB1053 /* ConfigsTableViewController.swift in Sources */,
 				B4A49FFB20902C26003EF9DD /* NavigationController.swift in Sources */,
 				B4A4A0092090305C003EF9DD /* HomeViewController.swift in Sources */,
+				B45F7D1620EC66BF00BEB471 /* FindViewController.swift in Sources */,
 				B430807320906C18000F3DC0 /* INTabBarViewController.swift in Sources */,
 				B4114FE020B001B90043B45F /* GoodsListTableViewCell.swift in Sources */,
 				B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */,

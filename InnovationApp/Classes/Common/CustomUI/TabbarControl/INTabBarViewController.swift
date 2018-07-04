@@ -26,8 +26,8 @@ extension INTabBarViewController {
     // MARK:- 初始化控制器
     private func initSubViewControllers() {
         
-        let classNameArr = ["Home", "Mine"]
-        let moduleNameArr = ["首页", "我的"]
+        let classNameArr = ["Home", "Find", "Mine"]
+        let moduleNameArr = ["首页", "发现", "我的"]
         
         var tabArr: [UIViewController] = []
         

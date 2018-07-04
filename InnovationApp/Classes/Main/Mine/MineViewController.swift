@@ -16,12 +16,10 @@ class MineViewController: INBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.item(title: "进入", tapAction: { [weak self] in
             self?.navigationController?.pushViewController(MyEditViewController(), animated: true)
         })
 
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -29,6 +29,7 @@ class MyEditViewController: ConfigsTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "配置tableview展示"
         tableViewConfig = TableViewConfigs()
         tableViewConfig?.sections = [section0]
         
