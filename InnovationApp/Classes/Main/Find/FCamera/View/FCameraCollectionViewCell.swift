@@ -10,9 +10,24 @@ import UIKit
 
 class FCameraCollectionViewCell: UICollectionViewCell {
 
+    
+    var model: FImageModel?{
+        didSet {
+            imageV.image = model?.image
+            if model?.isChoose == true {
+                chooseV.image = GetImage(name: "choose_icon")
+            } else {
+                chooseV.image = GetImage(name: "chooseno_icon")
+            }
+        }
+    }
+
     lazy var imageV: UIImageView = {
         var imageView:UIImageView = UIImageView()
-        imageView.backgroundColor = .red
+        return imageView
+    }()
+    lazy var chooseV: UIImageView = {
+        var imageView:UIImageView = UIImageView()
         return imageView
     }()
     
@@ -22,6 +37,11 @@ class FCameraCollectionViewCell: UICollectionViewCell {
         imageV.snp.makeConstraints { (maker) in
             maker.edges.equalTo(self)
         }
+        imageV.addSubview(chooseV)
+        chooseV.snp.makeConstraints { (maker) in
+            maker.right.bottom.equalTo(-3)
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -127,9 +127,6 @@ class InputViewController: RefreshViewController {
 
 extension InputViewController: UITextFieldDelegate {
     
-   
-    
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
 //        textField.resignFirstResponder()
