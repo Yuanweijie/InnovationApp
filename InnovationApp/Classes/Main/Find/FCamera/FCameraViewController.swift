@@ -54,9 +54,6 @@ class FCameraViewController: INBaseViewController {
             self?.chooseDatas?.removeAll()
             for mmodel in self?.datas ?? [] {
                 if mmodel.isChoose == true {
-//                    PHImageManager.default().requestImage(for: mmodel.phAsset!, targetSize: CGSize(width: 300, height: 300), contentMode: .aspectFill, options: nil) { (image, _) in
-//                        mmodel.image = image
-//                    }
                     self?.chooseDatas?.append(mmodel)
                 }
             }
@@ -100,6 +97,8 @@ class FCameraViewController: INBaseViewController {
             datas.enumerateObjects({ (asset, count, stop) in
                 if asset.mediaType == .image {
                     self.reloadImage(asset: asset)
+                } else if asset.mediaType == .video {
+//                    self.reloadImage(asset: asset)
                 }
             })
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: {

@@ -24,6 +24,8 @@ class FCameraCollectionViewCell: UICollectionViewCell {
 
     lazy var imageV: UIImageView = {
         var imageView:UIImageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     lazy var chooseV: UIImageView = {
