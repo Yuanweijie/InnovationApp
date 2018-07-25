@@ -28,6 +28,9 @@ let kThemeBlueColor = UIColor.hexColor(0x2396FF)
 let kThemeWhiteColor = UIColor.hexColor(0xFFFFFF)
 let kThemeBlackColor = UIColor.hexColor(0x000000)
 let kThemeBgColor = UIColor.hexColor(0xF1F2F8)
+let kThemeShadowColor = UIColor.hexColor(0x7A7E83)
+
+
 
 func GetImage(name: String) -> UIImage {
     return UIImage.init(named: name)!

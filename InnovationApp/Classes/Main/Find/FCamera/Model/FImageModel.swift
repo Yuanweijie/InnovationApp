@@ -14,5 +14,7 @@ class FImageModel: NSObject {
     var phAsset: PHAsset?
     var image:UIImage?
     var isChoose:Bool = false
+    var index:Int?
+    
 
 }

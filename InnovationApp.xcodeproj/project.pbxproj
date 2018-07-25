@@ -49,6 +49,8 @@
 		B4C1008220A2E16600BB729F /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008120A2E16600BB729F /* InputTextView.swift */; };
 		B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008420A2F64F00BB729F /* MBProgressTool.swift */; };
 		B4C1009020A317E200BB729F /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008E20A317E200BB729F /* AppUtils.m */; };
+		B4C5EE5221087D20001A7829 /* FCameraBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */; };
+		B4C5EE54210881C2001A7829 /* INBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5EE53210881C2001A7829 /* INBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,8 @@
 		B4C1008420A2F64F00BB729F /* MBProgressTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressTool.swift; sourceTree = "<group>"; };
 		B4C1008E20A317E200BB729F /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
 		B4C1008F20A317E200BB729F /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraBottomView.swift; sourceTree = "<group>"; };
+		B4C5EE53210881C2001A7829 /* INBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseView.swift; sourceTree = "<group>"; };
 		B4D34C2E2091E88B001173D3 /* InnovationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InnovationApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				B45F7D1B20EC6DA700BEB471 /* FCameraCollectionViewCell.swift */,
+				B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 			children = (
 				B4A4A01120903AF9003EF9DD /* INBaseViewController.swift */,
 				B430808A2090AD86000F3DC0 /* INBaseLoadingView.swift */,
+				B4C5EE53210881C2001A7829 /* INBaseView.swift */,
 			);
 			path = INBaseView;
 			sourceTree = "<group>";
@@ -588,6 +594,7 @@
 				B4A482462099BF64007A33DB /* InputViewController.swift in Sources */,
 				B418F15220AE6E0C00CB1053 /* MyEditViewController.swift in Sources */,
 				B430807120906C18000F3DC0 /* INTabBarBasicContentView.swift in Sources */,
+				B4C5EE5221087D20001A7829 /* FCameraBottomView.swift in Sources */,
 				B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */,
 				B430807620907775000F3DC0 /* RefreshViewController.swift in Sources */,
 				B49A211F20F5B7C80047DBC9 /* FImageModel.swift in Sources */,
@@ -612,6 +619,7 @@
 				B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */,
 				B430807220906C18000F3DC0 /* INTabbarBouncesContentView.swift in Sources */,
 				B4A49FF4209025A9003EF9DD /* AppDelegate.swift in Sources */,
+				B4C5EE54210881C2001A7829 /* INBaseView.swift in Sources */,
 				B4C1008220A2E16600BB729F /* InputTextView.swift in Sources */,
 				B4258AFF20F5F1FF009BC03D /* FindTableViewCell.swift in Sources */,
 				B4A49FFD20902CE3003EF9DD /* Common.swift in Sources */,
