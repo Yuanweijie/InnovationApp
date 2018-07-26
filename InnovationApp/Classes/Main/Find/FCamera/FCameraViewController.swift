@@ -89,28 +89,32 @@ class FCameraViewController: INBaseViewController {
         var datas: PHFetchResult<PHAsset>!
         datas = PHAsset.fetchAssets(with: PHAssetMediaType.image,
                                     options: allPhotosOptions)
+        
         DispatchQueue.global().async {
-            datas.enumerateObjects({ (asset, count, stop) in
+            datas.enumerateObjects({ [weak self] (asset, count, stop) in
                 if asset.mediaType == .image {
-                    self.reloadImage(asset: asset)
+                    let model = FImageModel()
+                    model.phAsset = asset
+                    self?.reloadImage(model: model)
+                    self?.datas?.append(model)
                 } else if asset.mediaType == .video {
-//                    self.reloadImage(asset: asset)
+
                 }
             })
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now(), execute: {
+            DispatchQueue.main.async {
                 self.collectionView.reloadData()
-            })
+            }
         }
     }
-    private func reloadImage(asset:PHAsset) {
-        let options = PHImageRequestOptions()
-        options.isSynchronous = true
-        options.isNetworkAccessAllowed = true
-        PHImageManager.default().requestImage(for: asset, targetSize: self.imageSize, contentMode: .aspectFill, options: options) { (image, _) in
-            let model = FImageModel()
-            model.phAsset = asset
-            model.image = image
-            self.datas?.append(model)
+    
+    private func reloadImage(model:FImageModel) {
+        if model.phAsset != nil {
+            let options = PHImageRequestOptions()
+            options.isSynchronous = true
+            options.isNetworkAccessAllowed = true
+            PHImageManager.default().requestImage(for: model.phAsset!, targetSize: imageSize, contentMode: .aspectFill, options: options) { (image, _) in
+                model.image = image
+            }
         }
     }
     
@@ -140,7 +144,7 @@ extension FCameraViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+       
     }
     
     func chooseAct(model : FImageModel) {

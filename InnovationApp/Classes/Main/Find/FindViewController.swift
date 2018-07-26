@@ -24,10 +24,9 @@ class FindViewController: RefreshViewController {
             let cameraVC = FCameraViewController()
             self?.navigationController?.pushViewController(cameraVC, animated: true)
             cameraVC.tapBlock = { assetArr in
-                
                 DispatchQueue.global().async {
                     for model in assetArr {
-                        PHImageManager.default().requestImage(for: model.phAsset!, targetSize: CGSize(width: 300, height: 300), contentMode: .aspectFill, options: nil) { (image, _) in
+                        PHImageManager.default().requestImage(for: model.phAsset!, targetSize: PHImageManagerMaximumSize, contentMode: .aspectFill, options: nil) { (image, _) in
                             model.image = image
                         }
                     }
