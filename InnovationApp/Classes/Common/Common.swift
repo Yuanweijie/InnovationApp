@@ -15,6 +15,7 @@ let kScreenW = UIScreen.main.bounds.size.width
 //状态栏高度
 let kStatusBarHeight : NSInteger = NSInteger(UIApplication.shared.statusBarFrame.size.height)
 let kTopBarHeight = 44
+let kNavHeight = kStatusBarHeight + kTopBarHeight
 
 // 服务器地址
 let BASE_URL = "http://demo.guanjiaapp.net:8889/"
@@ -29,6 +30,10 @@ let kThemeWhiteColor = UIColor.hexColor(0xFFFFFF)
 let kThemeBlackColor = UIColor.hexColor(0x000000)
 let kThemeBgColor = UIColor.hexColor(0xF1F2F8)
 let kThemeShadowColor = UIColor.hexColor(0x7A7E83)
+let kThreeColor = UIColor.hexColor(0x333333)
+let kNavBlueColor = UIColor.hexColor(0x589EFE)
+let kLineColor = UIColor.hexColor(0xE8E8E8)
+
 
 
 

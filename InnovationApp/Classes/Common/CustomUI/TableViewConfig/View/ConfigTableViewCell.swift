@@ -26,10 +26,12 @@ class ConfigTableViewCell: UITableViewCell {
     }
     
     static func createCellWithConfig(config: TableViewCellConfig, reuseIdentifier: String) -> ConfigTableViewCell{
-        if config is GoodsListViewCellConfig {
-            return GoodsListTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
+        if config is LeftLableViewCellConfig {
+            return LeftLableTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
+        } else if config is MineHeaderViewCellConfig {
+            return MineHeaderTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
         } else {
-          return ConfigTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
+            return ConfigTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
         }
         
         

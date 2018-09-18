@@ -11,9 +11,8 @@ import SnapKit
 import MJRefresh
 
 
-class RefreshViewController: INBaseViewController {
+class RefreshViewController: INBaseTableViewController {
 
-    var dataSource: [Any] = []
     var page : Int = 0
     var lastDataCount : NSInteger = 0
     
@@ -80,16 +79,6 @@ class RefreshViewController: INBaseViewController {
         }
     }
     
-    lazy var tableView: UITableView = {
-        var tableView = UITableView(frame: CGRect.zero, style: .grouped)
-        tableView.delegate = self
-        tableView.dataSource = self
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .automatic;
-        } 
-        return tableView
-    }()
-    
     lazy var loadingView: INBaseLoadingView = {
         var loadingView = INBaseLoadingView()
         return loadingView
@@ -97,7 +86,6 @@ class RefreshViewController: INBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSubViews()
         showRefreshHeader = true
         showRefreshFooter = true
     }
@@ -106,12 +94,9 @@ class RefreshViewController: INBaseViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func setupSubViews() {
-        view.addSubview(tableView)
+    override func setupSubViews() {
+        super.setupSubViews()
         view.addSubview(loadingView)
-        tableView.snp.makeConstraints { (maker) in
-            maker.edges.equalToSuperview()
-        }
         loadingView.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
@@ -121,41 +106,5 @@ class RefreshViewController: INBaseViewController {
 
 }
 
-extension RefreshViewController : UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        return headerView
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return CGFloat.leastNormalMagnitude
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return CGFloat.leastNormalMagnitude
-    }
-}
 
-extension RefreshViewController : UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1;
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
-    }
-}
 

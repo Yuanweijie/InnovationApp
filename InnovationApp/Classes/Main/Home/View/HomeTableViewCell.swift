@@ -14,7 +14,7 @@ class HomeTableViewCell: UITableViewCell {
         let titleLab = UILabel()
         titleLab.text = "女装"
         titleLab.numberOfLines = 0
-        titleLab.textColor = UIColor.hexColor(0x333333)
+        titleLab.textColor = kThreeColor
         titleLab.font = Font(size: 17)
         return titleLab
     }()
