@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import RxSwift
+import Photos
 
 class FCameraCollectionViewCell: UICollectionViewCell {
 
+    lazy var disposeBag = DisposeBag()
+    
+    var tapBlock:((_ model: FImageModel) -> ())?
     
     var model: FImageModel?{
         didSet {
             imageV.image = model?.image
             if model?.isChoose == true {
-                chooseV.image = GetImage(name: "choose_icon")
+                chooseV.setImage(GetImage(name: "choose_icon"), for: .normal)
+                chooseLab.isHidden = false
+                chooseLab.text = "\((model?.index ?? -1) + 1)"
             } else {
-                chooseV.image = GetImage(name: "chooseno_icon")
+                chooseV.setImage(GetImage(name: "chooseno_icon"), for: .normal)
+                chooseLab.isHidden = true
             }
         }
     }
@@ -28,9 +36,25 @@ class FCameraCollectionViewCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         return imageView
     }()
-    lazy var chooseV: UIImageView = {
-        var imageView:UIImageView = UIImageView()
-        return imageView
+    lazy var chooseV: UIButton = {
+        var button:UIButton = UIButton(type: .custom)
+        button.rx.controlEvent(.touchUpInside)
+            .subscribe(onNext: { [weak self] in
+                self?.tapBlock?((self?.model)!)
+            })
+            .disposed(by: disposeBag)
+        return button
+    }()
+    lazy var chooseLab: UILabel = {
+        var lable:UILabel = UILabel()
+        lable.backgroundColor = kThemeBlueColor
+        lable.textColor = kThemeWhiteColor
+        lable.font = Font(size: 13)
+        lable.textAlignment = .center
+        lable.layer.cornerRadius = 10
+        lable.layer.masksToBounds = true
+        lable.isHidden = true
+        return lable
     }()
     
     override init(frame: CGRect) {
@@ -39,11 +63,17 @@ class FCameraCollectionViewCell: UICollectionViewCell {
         imageV.snp.makeConstraints { (maker) in
             maker.edges.equalTo(self)
         }
-        imageV.addSubview(chooseV)
+        addSubview(chooseV)
         chooseV.snp.makeConstraints { (maker) in
-            maker.right.bottom.equalTo(-3)
+            maker.top.right.equalTo(0)
+            maker.width.height.equalTo(30)
         }
-        
+        addSubview(chooseLab)
+        chooseLab.snp.makeConstraints { (maker) in
+            maker.top.equalTo(5)
+            maker.right.equalTo(-5)
+            maker.height.width.equalTo(20)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -49,7 +49,7 @@ extension INTabBarViewController {
             
             tabBar.backgroundImage = UIImage.init()
             tabBar.shadowImage = UIImage.init()
-            tabBar.layer.shadowColor = UIColor.hexColor(0x7A7E83).withAlphaComponent(0.5).cgColor
+            tabBar.layer.shadowColor = kThemeShadowColor.withAlphaComponent(0.5).cgColor
             tabBar.layer.shadowOffset = CGSize(width: 0, height: -2)
             tabBar.layer.shadowOpacity = 0.1
             

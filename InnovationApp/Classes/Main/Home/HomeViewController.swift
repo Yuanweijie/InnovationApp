@@ -35,9 +35,6 @@ class HomeViewController: INBaseViewController {
 //        image.kf.setImage(with: URL(string: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525943087307&di=2568349d26d6b884a28bdc5e51bcfc53&imgtype=0&src=http%3A%2F%2Fimg10.cache.hxsd.com%2Fgame%2F2015%2F11%2F10%2F691428_1447126393_22.jpg"))
 //        view.addSubview(image)
         
-        
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,7 +68,7 @@ class HomeViewController: INBaseViewController {
         view.addSubview(homeNav)
         homeNav.snp.makeConstraints { (maker) in
             maker.top.left.right.equalToSuperview()
-            maker.height.equalTo(kTopBarHeight + kStatusBarHeight)
+            maker.height.equalTo(kNavHeight)
         }
         
         view.addSubview(tableView)

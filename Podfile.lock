@@ -1,16 +1,16 @@
 PODS:
-  - Alamofire (4.7.2)
+  - Alamofire (4.7.3)
   - ESTabBarController-swift (2.6.2)
-  - IQKeyboardManagerSwift (6.0.2)
-  - Kingfisher (4.7.0)
+  - IQKeyboardManagerSwift (6.1.1)
+  - Kingfisher (4.8.1)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.3)
-  - NVActivityIndicatorView (4.2.1):
-    - NVActivityIndicatorView/Presenter (= 4.2.1)
-  - NVActivityIndicatorView/Presenter (4.2.1)
-  - RxCocoa (4.1.2):
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
-  - RxSwift (4.1.2)
+  - RxSwift (4.2.0)
   - SnapKit (4.0.0)
   - SwiftyJSON (4.1.0)
 
@@ -42,18 +42,18 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   ESTabBarController-swift: f0a8679e43df1e60b7b36bbcaf1dc98ba6273c7d
-  IQKeyboardManagerSwift: 59d4b0e140bc546c3c76ae5bb35b3dafd10b8172
-  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 91ed82aa2f8bb211f6cca692ec3401553f731470
+PODFILE CHECKSUM: 391c4f9d36bd227549dfff78bbde5bc5ba974fdd
 
 COCOAPODS: 1.5.0

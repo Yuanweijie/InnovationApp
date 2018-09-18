@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6B3DD5F8590373C542968997 /* Pods_InnovationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0C8872796EBED549BE9BD3 /* Pods_InnovationApp.framework */; };
-		B4114FE020B001B90043B45F /* GoodsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114FDF20B001B90043B45F /* GoodsListTableViewCell.swift */; };
-		B4114FE220B002020043B45F /* GoodsListViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114FE120B002020043B45F /* GoodsListViewCellConfig.swift */; };
+		B407DA07214BAAE4004F9A5A /* LeftLableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407DA06214BAAE4004F9A5A /* LeftLableTableViewCell.swift */; };
+		B407DA09214BAB02004F9A5A /* LeftLableViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407DA08214BAB02004F9A5A /* LeftLableViewCellConfig.swift */; };
+		B407DA0B214BB074004F9A5A /* MineHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407DA0A214BB074004F9A5A /* MineHeaderTableViewCell.swift */; };
+		B407DA0D214BB08A004F9A5A /* MineHeaderViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407DA0C214BB08A004F9A5A /* MineHeaderViewCellConfig.swift */; };
 		B4114FE420B00D2D0043B45F /* UIBarButtonItem+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114FE320B00D2D0043B45F /* UIBarButtonItem+Touch.swift */; };
 		B414B6EC2092B35B00D433DF /* HomeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6EB2092B35B00D433DF /* HomeNavView.swift */; };
 		B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6F52092D91400D433DF /* NetworkTool.swift */; };
 		B414B6F92093129D00D433DF /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6F82093129D00D433DF /* Music.swift */; };
 		B414B6FB2093133000D433DF /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6FA2093133000D433DF /* MusicListViewModel.swift */; };
 		B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414B6FC209316B800D433DF /* HomeTableViewCell.swift */; };
-		B418F15220AE6E0C00CB1053 /* MyEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15120AE6E0C00CB1053 /* MyEditViewController.swift */; };
 		B418F15820AE6E9E00CB1053 /* ConfigsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15720AE6E9E00CB1053 /* ConfigsTableViewController.swift */; };
 		B418F15A20AE6EE600CB1053 /* TableViewConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15920AE6EE600CB1053 /* TableViewConfigs.swift */; };
 		B418F15C20AE707400CB1053 /* TableViewSectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418F15B20AE707400CB1053 /* TableViewSectionConfig.swift */; };
@@ -33,6 +34,7 @@
 		B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */; };
 		B45F7D1C20EC6DA800BEB471 /* FCameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1B20EC6DA700BEB471 /* FCameraCollectionViewCell.swift */; };
 		B49A211F20F5B7C80047DBC9 /* FImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A211E20F5B7C80047DBC9 /* FImageModel.swift */; };
+		B4A073E6214B715A00E5407E /* INBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A073E5214B715A00E5407E /* INBaseTableViewController.swift */; };
 		B4A482462099BF64007A33DB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A482452099BF64007A33DB /* InputViewController.swift */; };
 		B4A49FE0209021A9003EF9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A49FDE209021A9003EF9DD /* Main.storyboard */; };
 		B4A49FE2209021AB003EF9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A49FE1209021AB003EF9DD /* Assets.xcassets */; };
@@ -49,21 +51,24 @@
 		B4C1008220A2E16600BB729F /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008120A2E16600BB729F /* InputTextView.swift */; };
 		B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008420A2F64F00BB729F /* MBProgressTool.swift */; };
 		B4C1009020A317E200BB729F /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008E20A317E200BB729F /* AppUtils.m */; };
+		B4C5EE5221087D20001A7829 /* FCameraBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */; };
+		B4C5EE54210881C2001A7829 /* INBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5EE53210881C2001A7829 /* INBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		798EF56ECFDC11D7E7FFEF9E /* Pods-InnovationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InnovationApp/Pods-InnovationApp.release.xcconfig"; sourceTree = "<group>"; };
 		8E0C8872796EBED549BE9BD3 /* Pods_InnovationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InnovationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EA2426D77C9C9EA40BA940 /* Pods-InnovationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InnovationApp/Pods-InnovationApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B4114FDF20B001B90043B45F /* GoodsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListTableViewCell.swift; sourceTree = "<group>"; };
-		B4114FE120B002020043B45F /* GoodsListViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListViewCellConfig.swift; sourceTree = "<group>"; };
+		B407DA06214BAAE4004F9A5A /* LeftLableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLableTableViewCell.swift; sourceTree = "<group>"; };
+		B407DA08214BAB02004F9A5A /* LeftLableViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLableViewCellConfig.swift; sourceTree = "<group>"; };
+		B407DA0A214BB074004F9A5A /* MineHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		B407DA0C214BB08A004F9A5A /* MineHeaderViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHeaderViewCellConfig.swift; sourceTree = "<group>"; };
 		B4114FE320B00D2D0043B45F /* UIBarButtonItem+Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Touch.swift"; sourceTree = "<group>"; };
 		B414B6EB2092B35B00D433DF /* HomeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavView.swift; sourceTree = "<group>"; };
 		B414B6F52092D91400D433DF /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		B414B6F82093129D00D433DF /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		B414B6FA2093133000D433DF /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
 		B414B6FC209316B800D433DF /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		B418F15120AE6E0C00CB1053 /* MyEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEditViewController.swift; sourceTree = "<group>"; };
 		B418F15720AE6E9E00CB1053 /* ConfigsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigsTableViewController.swift; sourceTree = "<group>"; };
 		B418F15920AE6EE600CB1053 /* TableViewConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConfigs.swift; sourceTree = "<group>"; };
 		B418F15B20AE707400CB1053 /* TableViewSectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionConfig.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraViewController.swift; sourceTree = "<group>"; };
 		B45F7D1B20EC6DA700BEB471 /* FCameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraCollectionViewCell.swift; sourceTree = "<group>"; };
 		B49A211E20F5B7C80047DBC9 /* FImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FImageModel.swift; sourceTree = "<group>"; };
+		B4A073E5214B715A00E5407E /* INBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseTableViewController.swift; sourceTree = "<group>"; };
 		B4A482452099BF64007A33DB /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		B4A49FD7209021A9003EF9DD /* InnovationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InnovationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A49FDF209021A9003EF9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 		B4C1008420A2F64F00BB729F /* MBProgressTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressTool.swift; sourceTree = "<group>"; };
 		B4C1008E20A317E200BB729F /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
 		B4C1008F20A317E200BB729F /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraBottomView.swift; sourceTree = "<group>"; };
+		B4C5EE53210881C2001A7829 /* INBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseView.swift; sourceTree = "<group>"; };
 		B4D34C2E2091E88B001173D3 /* InnovationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InnovationApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,14 +167,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B418F15020AE6DF400CB1053 /* MyEdit */ = {
-			isa = PBXGroup;
-			children = (
-				B418F15120AE6E0C00CB1053 /* MyEditViewController.swift */,
-			);
-			path = MyEdit;
-			sourceTree = "<group>";
-		};
 		B418F15320AE6E3000CB1053 /* TableViewConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				B418F15F20AE74AF00CB1053 /* ConfigTableViewCell.swift */,
-				B4114FDF20B001B90043B45F /* GoodsListTableViewCell.swift */,
+				B407DA06214BAAE4004F9A5A /* LeftLableTableViewCell.swift */,
+				B407DA0A214BB074004F9A5A /* MineHeaderTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,7 +201,8 @@
 				B418F15920AE6EE600CB1053 /* TableViewConfigs.swift */,
 				B418F15B20AE707400CB1053 /* TableViewSectionConfig.swift */,
 				B418F15D20AE708A00CB1053 /* TableViewCellConfig.swift */,
-				B4114FE120B002020043B45F /* GoodsListViewCellConfig.swift */,
+				B407DA08214BAB02004F9A5A /* LeftLableViewCellConfig.swift */,
+				B407DA0C214BB08A004F9A5A /* MineHeaderViewCellConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				B45F7D1B20EC6DA700BEB471 /* FCameraCollectionViewCell.swift */,
+				B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,7 +411,6 @@
 			isa = PBXGroup;
 			children = (
 				B4A4A00A2090306C003EF9DD /* MineViewController.swift */,
-				B418F15020AE6DF400CB1053 /* MyEdit */,
 				B4A482442099BF4E007A33DB /* Input */,
 			);
 			path = Mine;
@@ -418,7 +420,9 @@
 			isa = PBXGroup;
 			children = (
 				B4A4A01120903AF9003EF9DD /* INBaseViewController.swift */,
+				B4A073E5214B715A00E5407E /* INBaseTableViewController.swift */,
 				B430808A2090AD86000F3DC0 /* INBaseLoadingView.swift */,
+				B4C5EE53210881C2001A7829 /* INBaseView.swift */,
 			);
 			path = INBaseView;
 			sourceTree = "<group>";
@@ -586,14 +590,13 @@
 				B4A4A00320902F0E003EF9DD /* UIColor+HexColor.swift in Sources */,
 				B4A4A01220903AF9003EF9DD /* INBaseViewController.swift in Sources */,
 				B4A482462099BF64007A33DB /* InputViewController.swift in Sources */,
-				B418F15220AE6E0C00CB1053 /* MyEditViewController.swift in Sources */,
 				B430807120906C18000F3DC0 /* INTabBarBasicContentView.swift in Sources */,
+				B4C5EE5221087D20001A7829 /* FCameraBottomView.swift in Sources */,
 				B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */,
 				B430807620907775000F3DC0 /* RefreshViewController.swift in Sources */,
 				B49A211F20F5B7C80047DBC9 /* FImageModel.swift in Sources */,
 				B4C1009020A317E200BB729F /* AppUtils.m in Sources */,
 				B418F16020AE74AF00CB1053 /* ConfigTableViewCell.swift in Sources */,
-				B4114FE220B002020043B45F /* GoodsListViewCellConfig.swift in Sources */,
 				B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */,
 				B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */,
 				B414B6F92093129D00D433DF /* Music.swift in Sources */,
@@ -602,23 +605,28 @@
 				B418F15A20AE6EE600CB1053 /* TableViewConfigs.swift in Sources */,
 				B418F15C20AE707400CB1053 /* TableViewSectionConfig.swift in Sources */,
 				B418F15E20AE708A00CB1053 /* TableViewCellConfig.swift in Sources */,
+				B407DA09214BAB02004F9A5A /* LeftLableViewCellConfig.swift in Sources */,
 				B418F15820AE6E9E00CB1053 /* ConfigsTableViewController.swift in Sources */,
 				B4A49FFB20902C26003EF9DD /* NavigationController.swift in Sources */,
 				B4A4A0092090305C003EF9DD /* HomeViewController.swift in Sources */,
 				B45F7D1620EC66BF00BEB471 /* FindViewController.swift in Sources */,
 				B430807320906C18000F3DC0 /* INTabBarViewController.swift in Sources */,
-				B4114FE020B001B90043B45F /* GoodsListTableViewCell.swift in Sources */,
 				B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */,
+				B407DA0D214BB08A004F9A5A /* MineHeaderViewCellConfig.swift in Sources */,
 				B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */,
+				B4A073E6214B715A00E5407E /* INBaseTableViewController.swift in Sources */,
 				B430807220906C18000F3DC0 /* INTabbarBouncesContentView.swift in Sources */,
 				B4A49FF4209025A9003EF9DD /* AppDelegate.swift in Sources */,
+				B4C5EE54210881C2001A7829 /* INBaseView.swift in Sources */,
 				B4C1008220A2E16600BB729F /* InputTextView.swift in Sources */,
+				B407DA07214BAAE4004F9A5A /* LeftLableTableViewCell.swift in Sources */,
 				B4258AFF20F5F1FF009BC03D /* FindTableViewCell.swift in Sources */,
 				B4A49FFD20902CE3003EF9DD /* Common.swift in Sources */,
 				B4A4A00520902F6F003EF9DD /* UIImage+Color.swift in Sources */,
 				B430808B2090AD86000F3DC0 /* INBaseLoadingView.swift in Sources */,
 				B4A49FF3209025A9003EF9DD /* ViewController.swift in Sources */,
 				B430806C20906220000F3DC0 /* HomeDetailViewController.swift in Sources */,
+				B407DA0B214BB074004F9A5A /* MineHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
