@@ -20,6 +20,7 @@ class MineViewController: INBaseViewController {
             self?.navigationController?.pushViewController(MyEditViewController(), animated: true)
         })
 
+        print("abcd")
     }
 
     override func didReceiveMemoryWarning() {
