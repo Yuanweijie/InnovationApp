@@ -178,7 +178,9 @@ class MineViewController: ConfigsTableViewController {
             maker.height.equalTo(0.5)
             maker.bottom.left.right.equalTo(navView)
         }
-        
+
+        print("abcd")
+
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
