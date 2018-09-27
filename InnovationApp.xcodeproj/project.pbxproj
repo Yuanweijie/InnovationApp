@@ -53,6 +53,10 @@
 		B4C1009020A317E200BB729F /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C1008E20A317E200BB729F /* AppUtils.m */; };
 		B4C5EE5221087D20001A7829 /* FCameraBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */; };
 		B4C5EE54210881C2001A7829 /* INBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5EE53210881C2001A7829 /* INBaseView.swift */; };
+		B4CFBBD1215CBFE100FEBEB9 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFBBD0215CBFE100FEBEB9 /* SetViewController.swift */; };
+		B4CFBBD3215CC39C00FEBEB9 /* INBaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFBBD2215CC39C00FEBEB9 /* INBaseWebViewController.swift */; };
+		B4CFBBD6215CD71200FEBEB9 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFBBD5215CD71200FEBEB9 /* UIViewController+BackButtonHandler.m */; };
+		B4CFBBD9215CDBE000FEBEB9 /* MineWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CFBBD8215CDBE000FEBEB9 /* MineWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +111,11 @@
 		B4C1008F20A317E200BB729F /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
 		B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraBottomView.swift; sourceTree = "<group>"; };
 		B4C5EE53210881C2001A7829 /* INBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseView.swift; sourceTree = "<group>"; };
+		B4CFBBD0215CBFE100FEBEB9 /* SetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		B4CFBBD2215CC39C00FEBEB9 /* INBaseWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseWebViewController.swift; sourceTree = "<group>"; };
+		B4CFBBD4215CD71200FEBEB9 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		B4CFBBD5215CD71200FEBEB9 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		B4CFBBD8215CDBE000FEBEB9 /* MineWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineWebViewController.swift; sourceTree = "<group>"; };
 		B4D34C2E2091E88B001173D3 /* InnovationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InnovationApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -389,6 +398,8 @@
 		B4A49FFE20902D87003EF9DD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B4CFBBD4215CD71200FEBEB9 /* UIViewController+BackButtonHandler.h */,
+				B4CFBBD5215CD71200FEBEB9 /* UIViewController+BackButtonHandler.m */,
 				B4A4A00220902F0E003EF9DD /* UIColor+HexColor.swift */,
 				B4A4A00420902F6F003EF9DD /* UIImage+Color.swift */,
 				B4114FE320B00D2D0043B45F /* UIBarButtonItem+Touch.swift */,
@@ -411,6 +422,8 @@
 			isa = PBXGroup;
 			children = (
 				B4A4A00A2090306C003EF9DD /* MineViewController.swift */,
+				B4CFBBCF215CBFCC00FEBEB9 /* Set */,
+				B4CFBBD7215CDBD200FEBEB9 /* MineWeb */,
 				B4A482442099BF4E007A33DB /* Input */,
 			);
 			path = Mine;
@@ -423,6 +436,7 @@
 				B4A073E5214B715A00E5407E /* INBaseTableViewController.swift */,
 				B430808A2090AD86000F3DC0 /* INBaseLoadingView.swift */,
 				B4C5EE53210881C2001A7829 /* INBaseView.swift */,
+				B4CFBBD2215CC39C00FEBEB9 /* INBaseWebViewController.swift */,
 			);
 			path = INBaseView;
 			sourceTree = "<group>";
@@ -442,6 +456,22 @@
 				B4C1008E20A317E200BB729F /* AppUtils.m */,
 			);
 			path = APPUtils;
+			sourceTree = "<group>";
+		};
+		B4CFBBCF215CBFCC00FEBEB9 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				B4CFBBD0215CBFE100FEBEB9 /* SetViewController.swift */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		B4CFBBD7215CDBD200FEBEB9 /* MineWeb */ = {
+			isa = PBXGroup;
+			children = (
+				B4CFBBD8215CDBE000FEBEB9 /* MineWebViewController.swift */,
+			);
+			path = MineWeb;
 			sourceTree = "<group>";
 		};
 		B4D34C2D2091E86C001173D3 /* BridgeHeader */ = {
@@ -595,7 +625,9 @@
 				B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */,
 				B430807620907775000F3DC0 /* RefreshViewController.swift in Sources */,
 				B49A211F20F5B7C80047DBC9 /* FImageModel.swift in Sources */,
+				B4CFBBD6215CD71200FEBEB9 /* UIViewController+BackButtonHandler.m in Sources */,
 				B4C1009020A317E200BB729F /* AppUtils.m in Sources */,
+				B4CFBBD9215CDBE000FEBEB9 /* MineWebViewController.swift in Sources */,
 				B418F16020AE74AF00CB1053 /* ConfigTableViewCell.swift in Sources */,
 				B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */,
 				B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */,
@@ -612,6 +644,7 @@
 				B45F7D1620EC66BF00BEB471 /* FindViewController.swift in Sources */,
 				B430807320906C18000F3DC0 /* INTabBarViewController.swift in Sources */,
 				B414B6F62092D91400D433DF /* NetworkTool.swift in Sources */,
+				B4CFBBD1215CBFE100FEBEB9 /* SetViewController.swift in Sources */,
 				B407DA0D214BB08A004F9A5A /* MineHeaderViewCellConfig.swift in Sources */,
 				B4C1008520A2F64F00BB729F /* MBProgressTool.swift in Sources */,
 				B4A073E6214B715A00E5407E /* INBaseTableViewController.swift in Sources */,
@@ -627,6 +660,7 @@
 				B4A49FF3209025A9003EF9DD /* ViewController.swift in Sources */,
 				B430806C20906220000F3DC0 /* HomeDetailViewController.swift in Sources */,
 				B407DA0B214BB074004F9A5A /* MineHeaderTableViewCell.swift in Sources */,
+				B4CFBBD3215CC39C00FEBEB9 /* INBaseWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

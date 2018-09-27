@@ -72,7 +72,7 @@ class MineViewController: ConfigsTableViewController {
     
     private lazy var section1: TableViewSectionConfig = {
         var section: TableViewSectionConfig = TableViewSectionConfig()
-        section.items = [xkConfig,kgConfig,bfjlConfig,fqtlConfig,yhkthConfig,alyscConfig,ylbConfig,bzfkConfig]
+        section.items = [xkConfig,kgConfig,bfjlConfig,fqtlConfig,alyscConfig,ylbConfig,bzfkConfig]
         section.headerHeight = 10
         return section
     }()
@@ -96,24 +96,34 @@ class MineViewController: ConfigsTableViewController {
         config.leftStr = "发起的讨论"
         return config
     }()
-    private lazy var yhkthConfig: LeftLableViewCellConfig = {
-        var config: LeftLableViewCellConfig = LeftLableViewCellConfig()
-        config.leftStr = "银行卡特惠"
-        return config
-    }()
     private lazy var alyscConfig: LeftLableViewCellConfig = {
         var config: LeftLableViewCellConfig = LeftLableViewCellConfig()
         config.leftStr = "阿里鱼商城"
+        config.selectionHandler = { [weak self] item in
+            let vc:MineWebViewController = MineWebViewController()
+            vc.urlStr = TBFishHTML
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
         return config
     }()
     private lazy var ylbConfig: LeftLableViewCellConfig = {
         var config: LeftLableViewCellConfig = LeftLableViewCellConfig()
         config.leftStr = "娱乐宝"
+        config.selectionHandler = { [weak self] item in
+            let vc:MineWebViewController = MineWebViewController()
+            vc.urlStr = YuLeBaoHTML
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
         return config
     }()
     private lazy var bzfkConfig: LeftLableViewCellConfig = {
         var config: LeftLableViewCellConfig = LeftLableViewCellConfig()
         config.leftStr = "帮助与反馈"
+        config.selectionHandler = { [weak self] item in
+            let vc:MineWebViewController = MineWebViewController()
+            vc.urlStr = TBXMMHTML
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
         return config
     }()
     
@@ -212,7 +222,7 @@ class MineViewController: ConfigsTableViewController {
     
     //MARK: - 设置
     private func setPushVC() {
-        
+        navigationController?.pushViewController(SetViewController(), animated: true)
     }
     
     override func didReceiveMemoryWarning() {
