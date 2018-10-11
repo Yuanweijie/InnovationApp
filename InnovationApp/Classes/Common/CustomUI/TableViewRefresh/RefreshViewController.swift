@@ -40,7 +40,7 @@ class RefreshViewController: INBaseTableViewController {
                         }
                     }
                 }
-                
+                header.lastUpdatedTimeLabel.isHidden = true
                 self.tableView.mj_header = header
             } else {
                 self.tableView.mj_header = nil
