@@ -18,7 +18,6 @@ class INBaseWebViewController: INBaseViewController {
         webView.navigationDelegate = self
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         webView.addObserver(self, forKeyPath: "title", options: .new, context: nil)
-        
         return webView
     }()
     
@@ -42,7 +41,6 @@ class INBaseWebViewController: INBaseViewController {
         webView.snp.makeConstraints { (maker) in
             maker.edges.equalTo(view)
         }
-        
     }
     
     func requestUrl() {
@@ -90,22 +88,39 @@ class INBaseWebViewController: INBaseViewController {
     
 }
 
-extension INBaseWebViewController: WKUIDelegate, WKNavigationDelegate {
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+extension INBaseWebViewController: WKUIDelegate, WKNavigationDelegate,WKScriptMessageHandler {
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+   
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         print(error)
     }
     
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-//        print("收到响应" + (navigationResponse.response.url?.absoluteString ?? ""))
-//    }
-//
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-//        print("发送请求之前" + (navigationAction.request.url?.absoluteString ?? ""))
-//    }
+}
+
+class WeakScriptMessageDelegate: NSObject,WKScriptMessageHandler {
     
+    weak var scriptDelegate: WKScriptMessageHandler?
+    
+    init(_ scriptDelegate: WKScriptMessageHandler) {
+        self.scriptDelegate = scriptDelegate
+        super.init()
+    }
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        scriptDelegate?.userContentController(userContentController, didReceive: message)
+    }
+    
+    deinit {
+        print("WeakScriptMessageDelegate is deinit")
+    }
     
 }
+
+

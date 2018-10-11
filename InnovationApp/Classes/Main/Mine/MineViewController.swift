@@ -72,7 +72,7 @@ class MineViewController: ConfigsTableViewController {
     
     private lazy var section1: TableViewSectionConfig = {
         var section: TableViewSectionConfig = TableViewSectionConfig()
-        section.items = [xkConfig,kgConfig,bfjlConfig,fqtlConfig,alyscConfig,ylbConfig,bzfkConfig]
+        section.items = [xkConfig,kgConfig,bfjlConfig,fqtlConfig,alyscConfig,ylbConfig,bzfkConfig,spxqConfig]
         section.headerHeight = 10
         return section
     }()
@@ -122,6 +122,16 @@ class MineViewController: ConfigsTableViewController {
         config.selectionHandler = { [weak self] item in
             let vc:MineWebViewController = MineWebViewController()
             vc.urlStr = TBXMMHTML
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+        return config
+    }()
+    private lazy var spxqConfig: LeftLableViewCellConfig = {
+        var config: LeftLableViewCellConfig = LeftLableViewCellConfig()
+        config.leftStr = "商品详情"
+        config.selectionHandler = { [weak self] item in
+            let vc:MineWebViewController = MineWebViewController()
+            vc.urlStr = GOODSDETAILHTML
             self?.navigationController?.pushViewController(vc, animated: true)
         }
         return config

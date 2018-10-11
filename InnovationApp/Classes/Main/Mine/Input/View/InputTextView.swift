@@ -60,7 +60,7 @@ class InputTextView: UIView {
         inpuView.snp.makeConstraints { (maker) in
             maker.left.equalTo(10)
             maker.right.equalTo(-10)
-            maker.bottom.equalTo(-10)
+            maker.top.equalTo(40)
             maker.height.equalTo(100)
         }
     }

@@ -73,7 +73,7 @@ class InputViewController: RefreshViewController {
         view.addSubview(tableView)
         bootomView.snp.makeConstraints { (maker) in
             maker.left.bottom.right.equalToSuperview()
-            maker.height.equalTo(150)
+            maker.height.equalTo(150+kBottomHeight)
         }
         tableView.snp.makeConstraints { (maker) in
             maker.top.left.right.equalToSuperview()
