@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "完成"
-        IQKeyboardManager.shared.toolbarBarTintColor = kThemeBgColor
+        IQKeyboardManager.shared.toolbarBarTintColor = kBgColor
 //        IQKeyboardManager.shared.keyboardDistanceFromTextField = 0
         
         return true

@@ -10,13 +10,14 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+
 class INBaseViewController: UIViewController {
     
     lazy var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = kThemeBgColor
+        view.backgroundColor = kBgColor
     }
 
     override func didReceiveMemoryWarning() {

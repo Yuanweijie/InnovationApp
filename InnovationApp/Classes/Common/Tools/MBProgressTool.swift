@@ -9,15 +9,14 @@
 import UIKit
 import MBProgressHUD
 
-
 extension MBProgressHUD {
     
     private static func show(text: String, icon: String) {
         let hud = MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow!, animated: true)
         hud.label.text = text
-        hud.contentColor = kThemeWhiteColor
+        hud.contentColor = kWhiteColor
         hud.bezelView.style = .solidColor
-        hud.bezelView.color = kThemeBlackColor
+        hud.bezelView.color = kBlackColor
         hud.customView = UIImageView.init(image: UIImage(named: icon))
         hud.mode = .customView
         hud.removeFromSuperViewOnHide = true

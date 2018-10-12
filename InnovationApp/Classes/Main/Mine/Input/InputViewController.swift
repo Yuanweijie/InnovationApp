@@ -8,7 +8,6 @@
 
 import UIKit
 import IQKeyboardManagerSwift
-import MBProgressHUD
 
 class InputViewController: RefreshViewController {
     
@@ -26,7 +25,7 @@ class InputViewController: RefreshViewController {
     
     lazy var searchView : UIView = {
         var searchView : UIView = UIView()
-        searchView.backgroundColor = kThemeWhiteColor
+        searchView.backgroundColor = kWhiteColor
         searchView.frame = CGRect(x: 0, y: 0, width: kScreenW-150, height: 40)
         return searchView
     }()
@@ -38,7 +37,7 @@ class InputViewController: RefreshViewController {
     }()
     lazy var searchTF : UITextField = {
         var searchTF : UITextField = UITextField()
-        searchTF.backgroundColor = kThemeWhiteColor
+        searchTF.backgroundColor = kWhiteColor
         searchTF.delegate = self
         searchTF.returnKeyType = .search
         searchTF.placeholder = "搜索话术"

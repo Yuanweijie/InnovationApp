@@ -8,7 +8,6 @@
 
 import UIKit
 import Photos
-import MBProgressHUD
 
 class FCameraViewController: INBaseViewController {
     
@@ -25,7 +24,7 @@ class FCameraViewController: INBaseViewController {
         layout.sectionInset = UIEdgeInsets.init(top: 1, left: 1, bottom: 1, right: 1)
         
         var collectionView:UICollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = kThemeBgColor
+        collectionView.backgroundColor = kBgColor
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(FCameraCollectionViewCell.self, forCellWithReuseIdentifier: "cell")

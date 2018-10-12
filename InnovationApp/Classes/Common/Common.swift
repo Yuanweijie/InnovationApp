@@ -20,14 +20,16 @@ let kBottomHeight = kStatusBarHeight > 20 ? 34 : 0
 let BASE_URL = "http://demo.guanjiaapp.net:8889/"
 
 // MARK:- 颜色方法
-let kThemeBlueColor = UIColor.hexColor(0x2396FF)
-let kThemeWhiteColor = UIColor.hexColor(0xFFFFFF)
-let kThemeBlackColor = UIColor.hexColor(0x000000)
-let kThemeBgColor = UIColor.hexColor(0xF1F2F8)
-let kThemeShadowColor = UIColor.hexColor(0x7A7E83)
+let kBlueColor = UIColor.hexColor(0x2396FF)
+let kWhiteColor = UIColor.hexColor(0xFFFFFF)
+let kBlackColor = UIColor.hexColor(0x000000)
+let kDarkColor = UIColor.hexColor(0x888888)
+let kBgColor = UIColor.hexColor(0xF1F2F8)
+let kShadowColor = UIColor.hexColor(0x7A7E83)
 let kThreeColor = UIColor.hexColor(0x333333)
 let kNavBlueColor = UIColor.hexColor(0x589EFE)
 let kLineColor = UIColor.hexColor(0xE8E8E8)
+let kRedColor = UIColor.hexColor(0xFF373F)
 
 
 func GetImage(name: String) -> UIImage {

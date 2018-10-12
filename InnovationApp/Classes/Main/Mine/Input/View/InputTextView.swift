@@ -19,7 +19,7 @@ class InputTextView: UIView {
     lazy var inpuView : UITextView = {
         var inpuView : UITextView = UITextView()
         inpuView.layer.borderWidth = 1
-        inpuView.layer.borderColor = kThemeBgColor.cgColor
+        inpuView.layer.borderColor = kBgColor.cgColor
         inpuView.font = Font(size: 16)
         inpuView.toolbarPlaceholder = "输入话术"
         return inpuView
@@ -31,8 +31,8 @@ class InputTextView: UIView {
         okBtn.layer.masksToBounds = true
         okBtn.setTitle("发送", for: .normal)
         okBtn.titleLabel?.font = Font(size: 15.0)
-        okBtn.setTitleColor(kThemeWhiteColor, for: .normal)
-        okBtn.backgroundColor = kThemeBlueColor
+        okBtn.setTitleColor(kWhiteColor, for: .normal)
+        okBtn.backgroundColor = kBlueColor
         okBtn.rx.controlEvent(.touchUpInside)
             .subscribe( onNext: {[weak self] in
                 self?.tapBlock?()
@@ -43,7 +43,7 @@ class InputTextView: UIView {
     
     override init(frame:CGRect){
         super.init(frame: frame)
-        backgroundColor = kThemeWhiteColor
+        backgroundColor = kWhiteColor
         setupSubViews()
     }
     

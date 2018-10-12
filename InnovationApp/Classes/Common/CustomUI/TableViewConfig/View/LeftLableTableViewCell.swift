@@ -12,8 +12,8 @@ class LeftLableTableViewCell: ConfigTableViewCell {
 
     private lazy var leftLabel: UILabel = {
         var lable = UILabel()
-        lable.font = UIFont.systemFont(ofSize: 16)
-        lable.textColor = kThemeBlackColor
+        lable.font = Font(size: 16)
+        lable.textColor = kBlackColor
         return lable
     }()
     private lazy var rightImg: UIImageView = {
@@ -57,6 +57,9 @@ class LeftLableTableViewCell: ConfigTableViewCell {
         
         if let cellConfig = config as? LeftLableViewCellConfig {
             leftLabel.text = cellConfig.leftStr
+            leftLabel.textColor = cellConfig.leftColor
+            rightImg.isHidden = cellConfig.rightImgHidden
+            lineV.isHidden = cellConfig.lineHidden
         }
         
     }

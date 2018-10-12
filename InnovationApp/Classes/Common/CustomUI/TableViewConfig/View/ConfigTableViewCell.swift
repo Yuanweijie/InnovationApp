@@ -30,6 +30,10 @@ class ConfigTableViewCell: UITableViewCell {
             return LeftLableTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
         } else if config is MineHeaderViewCellConfig {
             return MineHeaderTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
+        } else if config is SetHeaderViewCellConfig {
+            return SetHeaderTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
+        } else if config is LineViewCellConfig {
+            return LineTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
         } else {
             return ConfigTableViewCell(style: .default, reuseIdentifier: config.reuseIdentifier)
         }

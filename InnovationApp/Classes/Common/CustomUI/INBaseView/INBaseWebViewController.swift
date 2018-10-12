@@ -23,8 +23,8 @@ class INBaseWebViewController: INBaseViewController {
     
     lazy private var progressView: UIProgressView = {
         let progressView = UIProgressView.init(frame: CGRect(x: CGFloat(0), y: 0, width: UIScreen.main.bounds.width, height: 2))
-        progressView.tintColor = kThemeBlueColor      // 进度条颜色
-        progressView.trackTintColor = kThemeWhiteColor // 进度条背景色
+        progressView.tintColor = kBlueColor      // 进度条颜色
+        progressView.trackTintColor = kWhiteColor // 进度条背景色
         return progressView
     }()
     

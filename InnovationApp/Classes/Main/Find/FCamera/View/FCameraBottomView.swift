@@ -14,9 +14,9 @@ class FCameraBottomView: INBaseView {
 
     private lazy var doneBtn: UIButton = {
         var btn:UIButton = UIButton()
-        btn.backgroundColor = kThemeBlueColor
+        btn.backgroundColor = kBlueColor
         btn.setTitle("完成", for: .normal)
-        btn.setTitleColor(kThemeWhiteColor, for: .normal)
+        btn.setTitleColor(kWhiteColor, for: .normal)
         btn.titleLabel?.font = Font(size: 14)
         btn.layer.cornerRadius = 2
         btn.layer.masksToBounds = true

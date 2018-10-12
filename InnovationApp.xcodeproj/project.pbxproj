@@ -33,6 +33,11 @@
 		B45F7D1620EC66BF00BEB471 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1520EC66BF00BEB471 /* FindViewController.swift */; };
 		B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */; };
 		B45F7D1C20EC6DA800BEB471 /* FCameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45F7D1B20EC6DA700BEB471 /* FCameraCollectionViewCell.swift */; };
+		B46AB48C21703C630019C8C5 /* SetHeaderViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB48B21703C630019C8C5 /* SetHeaderViewCellConfig.swift */; };
+		B46AB48E21703C920019C8C5 /* SetHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB48D21703C920019C8C5 /* SetHeaderTableViewCell.swift */; };
+		B46AB49021704A240019C8C5 /* LineViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB48F21704A240019C8C5 /* LineViewCellConfig.swift */; };
+		B46AB49221704A5C0019C8C5 /* LineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB49121704A5C0019C8C5 /* LineTableViewCell.swift */; };
+		B46AB49521704BEF0019C8C5 /* ReplayKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AB49421704BEF0019C8C5 /* ReplayKitViewController.swift */; };
 		B49A211F20F5B7C80047DBC9 /* FImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A211E20F5B7C80047DBC9 /* FImageModel.swift */; };
 		B4A073E6214B715A00E5407E /* INBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A073E5214B715A00E5407E /* INBaseTableViewController.swift */; };
 		B4A482462099BF64007A33DB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A482452099BF64007A33DB /* InputViewController.swift */; };
@@ -88,6 +93,13 @@
 		B45F7D1520EC66BF00BEB471 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		B45F7D1820EC68AF00BEB471 /* FCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraViewController.swift; sourceTree = "<group>"; };
 		B45F7D1B20EC6DA700BEB471 /* FCameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCameraCollectionViewCell.swift; sourceTree = "<group>"; };
+		B46AB48B21703C630019C8C5 /* SetHeaderViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetHeaderViewCellConfig.swift; sourceTree = "<group>"; };
+		B46AB48D21703C920019C8C5 /* SetHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		B46AB48F21704A240019C8C5 /* LineViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewCellConfig.swift; sourceTree = "<group>"; };
+		B46AB49121704A5C0019C8C5 /* LineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTableViewCell.swift; sourceTree = "<group>"; };
+		B46AB49421704BEF0019C8C5 /* ReplayKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayKitViewController.swift; sourceTree = "<group>"; };
+		B46AB496217057BB0019C8C5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B46AB497217057BC0019C8C5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B49A211E20F5B7C80047DBC9 /* FImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FImageModel.swift; sourceTree = "<group>"; };
 		B4A073E5214B715A00E5407E /* INBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INBaseTableViewController.swift; sourceTree = "<group>"; };
 		B4A482452099BF64007A33DB /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +212,8 @@
 				B418F15F20AE74AF00CB1053 /* ConfigTableViewCell.swift */,
 				B407DA06214BAAE4004F9A5A /* LeftLableTableViewCell.swift */,
 				B407DA0A214BB074004F9A5A /* MineHeaderTableViewCell.swift */,
+				B46AB48D21703C920019C8C5 /* SetHeaderTableViewCell.swift */,
+				B46AB49121704A5C0019C8C5 /* LineTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +226,8 @@
 				B418F15D20AE708A00CB1053 /* TableViewCellConfig.swift */,
 				B407DA08214BAB02004F9A5A /* LeftLableViewCellConfig.swift */,
 				B407DA0C214BB08A004F9A5A /* MineHeaderViewCellConfig.swift */,
+				B46AB48B21703C630019C8C5 /* SetHeaderViewCellConfig.swift */,
+				B46AB48F21704A240019C8C5 /* LineViewCellConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +293,14 @@
 				B4C5EE5121087D20001A7829 /* FCameraBottomView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B46AB49321704BD80019C8C5 /* ReplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				B46AB49421704BEF0019C8C5 /* ReplayKitViewController.swift */,
+			);
+			path = ReplayKit;
 			sourceTree = "<group>";
 		};
 		B49A211D20F5B2BA0047DBC9 /* Model */ = {
@@ -422,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A4A00A2090306C003EF9DD /* MineViewController.swift */,
+				B46AB49321704BD80019C8C5 /* ReplayKit */,
 				B4CFBBCF215CBFCC00FEBEB9 /* Set */,
 				B4CFBBD7215CDBD200FEBEB9 /* MineWeb */,
 				B4A482442099BF4E007A33DB /* Input */,
@@ -617,9 +642,11 @@
 			files = (
 				B414B6FB2093133000D433DF /* MusicListViewModel.swift in Sources */,
 				B4114FE420B00D2D0043B45F /* UIBarButtonItem+Touch.swift in Sources */,
+				B46AB49521704BEF0019C8C5 /* ReplayKitViewController.swift in Sources */,
 				B4A4A00320902F0E003EF9DD /* UIColor+HexColor.swift in Sources */,
 				B4A4A01220903AF9003EF9DD /* INBaseViewController.swift in Sources */,
 				B4A482462099BF64007A33DB /* InputViewController.swift in Sources */,
+				B46AB49221704A5C0019C8C5 /* LineTableViewCell.swift in Sources */,
 				B430807120906C18000F3DC0 /* INTabBarBasicContentView.swift in Sources */,
 				B4C5EE5221087D20001A7829 /* FCameraBottomView.swift in Sources */,
 				B4A4A00B2090306C003EF9DD /* MineViewController.swift in Sources */,
@@ -627,7 +654,9 @@
 				B49A211F20F5B7C80047DBC9 /* FImageModel.swift in Sources */,
 				B4CFBBD6215CD71200FEBEB9 /* UIViewController+BackButtonHandler.m in Sources */,
 				B4C1009020A317E200BB729F /* AppUtils.m in Sources */,
+				B46AB49021704A240019C8C5 /* LineViewCellConfig.swift in Sources */,
 				B4CFBBD9215CDBE000FEBEB9 /* MineWebViewController.swift in Sources */,
+				B46AB48C21703C630019C8C5 /* SetHeaderViewCellConfig.swift in Sources */,
 				B418F16020AE74AF00CB1053 /* ConfigTableViewCell.swift in Sources */,
 				B45F7D1920EC68AF00BEB471 /* FCameraViewController.swift in Sources */,
 				B414B6FD209316B800D433DF /* HomeTableViewCell.swift in Sources */,
@@ -661,6 +690,7 @@
 				B430806C20906220000F3DC0 /* HomeDetailViewController.swift in Sources */,
 				B407DA0B214BB074004F9A5A /* MineHeaderTableViewCell.swift in Sources */,
 				B4CFBBD3215CC39C00FEBEB9 /* INBaseWebViewController.swift in Sources */,
+				B46AB48E21703C920019C8C5 /* SetHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +701,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B4A49FDF209021A9003EF9DD /* Base */,
+				B46AB496217057BB0019C8C5 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -679,6 +710,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B4A49FE4209021AB003EF9DD /* Base */,
+				B46AB497217057BC0019C8C5 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -690,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -750,6 +783,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -821,7 +855,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "InnovationApp/Classes/Common/BridgeHeader/InnovationApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				ad = as;
 			};
 			name = Debug;
@@ -846,7 +880,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "InnovationApp/Classes/Common/BridgeHeader/InnovationApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				ad = as;
 			};
 			name = Release;

@@ -12,13 +12,13 @@ import NVActivityIndicatorView
 class INBaseLoadingView: UIView {
     
     lazy var indeiView: NVActivityIndicatorView = {
-        var indeiView : NVActivityIndicatorView = NVActivityIndicatorView(frame: CGRect.zero,  type: .ballClipRotate, color: kThemeBlueColor, padding: 0)
+        var indeiView : NVActivityIndicatorView = NVActivityIndicatorView(frame: CGRect.zero,  type: .ballClipRotate, color: kBlueColor, padding: 0)
         return indeiView
     }()
 
     override init(frame:CGRect){
         super.init(frame: frame)
-        backgroundColor = kThemeBgColor
+        backgroundColor = kBgColor
         setupSubViews()
     }
     

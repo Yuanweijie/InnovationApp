@@ -47,8 +47,8 @@ class FCameraCollectionViewCell: UICollectionViewCell {
     }()
     lazy var chooseLab: UILabel = {
         var lable:UILabel = UILabel()
-        lable.backgroundColor = kThemeBlueColor
-        lable.textColor = kThemeWhiteColor
+        lable.backgroundColor = kBlueColor
+        lable.textColor = kWhiteColor
         lable.font = Font(size: 13)
         lable.textAlignment = .center
         lable.layer.cornerRadius = 10

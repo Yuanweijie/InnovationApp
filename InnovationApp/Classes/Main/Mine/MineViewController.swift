@@ -13,14 +13,14 @@ class MineViewController: ConfigsTableViewController {
     
     private lazy var navView: UIView = {
         var view : UIView = UIView()
-        view.backgroundColor = kThemeWhiteColor
+        view.backgroundColor = kWhiteColor
         view.alpha = 0
         return view
     }()
     private lazy var navtitle: UILabel = {
         var lable : UILabel = UILabel()
         lable.text = "我的"
-        lable.textColor = kThemeBlackColor
+        lable.textColor = kBlackColor
         lable.font = Font(size: 16)
         return lable
     }()
@@ -198,8 +198,6 @@ class MineViewController: ConfigsTableViewController {
             maker.height.equalTo(0.5)
             maker.bottom.left.right.equalTo(navView)
         }
-
-        print("abcd")
 
     }
     

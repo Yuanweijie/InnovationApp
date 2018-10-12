@@ -23,11 +23,11 @@ class NavigationController: UINavigationController {
     }
     
     private func setNav() {
-        navigationBar.setBackgroundImage(UIImage.color(kThemeWhiteColor), for: UIBarPosition.any, barMetrics: .default)
-        navigationBar.tintColor = kThemeBlueColor
-        navigationBar.barTintColor = kThemeWhiteColor
+        navigationBar.setBackgroundImage(UIImage.color(kWhiteColor), for: UIBarPosition.any, barMetrics: .default)
+        navigationBar.tintColor = kBlueColor
+        navigationBar.barTintColor = kWhiteColor
         navigationBar.titleTextAttributes = [
-            NSAttributedStringKey.foregroundColor : kThemeBlackColor,
+            NSAttributedStringKey.foregroundColor : kBlackColor,
             NSAttributedStringKey.font : boldFont(size: 18)]
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : Font(size: 15)], for: .normal)
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-8, -1), for: .default)

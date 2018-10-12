@@ -11,11 +11,14 @@ import UIKit
 class LeftLableViewCellConfig: TableViewCellConfig {
     
     var leftStr: String?
+    var leftColor: UIColor = kBlackColor
+    var rightImgHidden:Bool = false
+    var lineHidden:Bool = false
     
     override init() {
         super.init()
         self.reuseIdentifier = "LeftLableTableViewCell"
-        self.cellHeight = 60
+        self.cellHeight = CellSixtyHeight
     }
     
 }

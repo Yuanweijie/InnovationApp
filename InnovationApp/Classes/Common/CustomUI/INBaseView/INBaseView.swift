@@ -15,8 +15,8 @@ class INBaseView: UIView {
    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = kThemeWhiteColor
-        layer.shadowColor = kThemeShadowColor.withAlphaComponent(0.5).cgColor
+        backgroundColor = kWhiteColor
+        layer.shadowColor = kShadowColor.withAlphaComponent(0.5).cgColor
         layer.shadowOffset = CGSize(width: 0, height: -2)
         layer.shadowOpacity = 0.3
         setupSubViews()

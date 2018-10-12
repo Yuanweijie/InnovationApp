@@ -8,6 +8,9 @@
 
 import UIKit
 
+let CellFivetyHeight:CGFloat = 50
+let CellSixtyHeight:CGFloat = 60
+
 class TableViewCellConfig: NSObject {
 
     var cellHeight: CGFloat = 44

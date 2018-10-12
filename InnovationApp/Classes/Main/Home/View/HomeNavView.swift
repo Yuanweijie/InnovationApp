@@ -13,7 +13,7 @@ class HomeNavView: UIView {
     lazy var titleLab: UILabel = {
         var titleLab : UILabel = UILabel()
         titleLab.text = "首页"
-        titleLab.textColor = kThemeWhiteColor
+        titleLab.textColor = kWhiteColor
         titleLab.font = boldFont(size: 20)
         return titleLab
     }()

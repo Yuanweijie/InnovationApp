@@ -22,7 +22,7 @@ extension UIBarButtonItem {
             let react = title.boundingRect(with: CGSize.init(width: 100, height: 50) , options:[NSStringDrawingOptions.usesFontLeading], attributes: [NSAttributedStringKey.font : font], context: nil)
             button.frame = CGRect(x: 0, y: 0, width: min(react.size.width, 44), height: 50)
             button.setTitle(title, for: .normal)
-            button.setTitleColor(kThemeBlueColor, for: .normal)
+            button.setTitleColor(kBlueColor, for: .normal)
             button.titleLabel?.font = font
             button.contentHorizontalAlignment = .right
         }
