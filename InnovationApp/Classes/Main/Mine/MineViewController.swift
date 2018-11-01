@@ -144,12 +144,16 @@ class MineViewController: ConfigsTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        if tableView.contentOffset.y <= CGFloat(kNavHeight){
-           UIApplication.shared.statusBarStyle = .lightContent
-        } else {
-           UIApplication.shared.statusBarStyle = .default
-        }
         navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if tableView.contentOffset.y <= CGFloat(kNavHeight){
+            UIApplication.shared.statusBarStyle = .lightContent
+        } else {
+            UIApplication.shared.statusBarStyle = .default
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
